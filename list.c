@@ -64,7 +64,7 @@ PNODE create_list(void)
 }
 
 /**
-*遍历链表9
+*遍历链表	
 */
 void traverse_list(PNODE pHead)
 {
@@ -78,3 +78,4 @@ void traverse_list(PNODE pHead)
 	printf("\n");
 	return;
 }
+
