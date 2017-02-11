@@ -103,7 +103,7 @@ bool empty_queue(QUEUE * pQ)
 		return false;
 }
 
-//出栈
+//出队
 bool out_queue(QUEUE * pQ, int * pVal)
 {
 	if(empty_queue(pQ))
