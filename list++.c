@@ -27,26 +27,26 @@ int main(void)
 	int pos = 4;
 	pHead =  create_list();	
 	traverse_list(pHead);
-	//删除
-	if(delete_list(pHead,pos,&val))
-	{
-		printf("第%d个节点被删除，元素为：%d\n",pos,val);
-	}
-	else 
-	{
-		printf("删除失败\n");
-	}
-	traverse_list(pHead);
+	// //删除
+	// if(delete_list(pHead,pos,&val))
+	// {
+	// 	printf("第%d个节点被删除，元素为：%d\n",pos,val);
+	// }
+	// else 
+	// {
+	// 	printf("删除失败\n");
+	// }
+	// traverse_list(pHead);
 	
 //	//插入
 //	insert_list(pHead,4,23);
 //	traverse_list(pHead);
 
-//	//是否为空
-//	if(is_empty(pHead))
-//		printf("链表为空\n");
-//	else 
-//		printf("链表不为空\n");
+	//是否为空
+	if(is_empty(pHead))
+		printf("链表为空\n");
+	else 
+		printf("链表不为空\n");
 
 //	//链表长度
 //	int len = length_list(pHead);
