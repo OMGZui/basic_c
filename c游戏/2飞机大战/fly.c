@@ -16,7 +16,7 @@ int main(void)
     char input;
     int isFire = 0;
 
-    int ny = 5;
+    int ny = 10; // 一个靶子，放在第一行，ny列上
     int isKilled = 0;
 
     while (1)
@@ -42,6 +42,9 @@ int main(void)
                 }
                 printf("  |\n");
             }
+            if (y+2==ny){
+                isKilled = 1; // 击中靶子
+            }
             isFire = 0;
         }
         
@@ -52,6 +55,7 @@ int main(void)
         printf("*****\n");
         for (j = 0; j < y; j++){printf(" ");}
         printf(" * * \n");
+        printf("\033[?25l"); // 光标转义字符
 
 
         if (kbhit())
