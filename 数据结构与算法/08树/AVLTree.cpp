@@ -8,12 +8,12 @@
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 
 typedef int Type;
-typedef struct AVLTreeNOde *AVLTree;
-typedef struct AVLTreeNOde Node;
+typedef struct AVLTreeNode *AVLTree;
+typedef struct AVLTreeNode Node;
 
 int avltree_height(AVLTree);
 
-struct AVLTreeNOde
+struct AVLTreeNode
 {
     Type key;
     int height;
