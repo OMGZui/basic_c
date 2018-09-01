@@ -36,5 +36,3 @@
 - php扩展开发
 
 ## 参考资料
-
-- [数据结构与算法系列 目录](http://www.cnblogs.com/skywang12345/p/3603935.html)
