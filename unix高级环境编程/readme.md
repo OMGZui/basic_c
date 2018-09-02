@@ -51,6 +51,9 @@ gcc myls.c -o myls -lapue
 # 报错解决
 csrutil disable
 重启后再进行cp操作
+```
+
+```bash
 # 方法二 本地调试
 复制apue.3e目录中include/apue.h和lib/libapue.a到自己的目录下
 cp apue.3e/include/apue.h .
