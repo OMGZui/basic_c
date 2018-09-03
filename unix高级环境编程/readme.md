@@ -44,13 +44,12 @@ int main(int argc, char const *argv[])
 ```bash
 # 方法一 一劳永逸
 sudo cp apue.3e/include/apue.h /usr/include
-sudo cp apue.3e/lib/libapue.a /usr/include
+sudo cp apue.3e/lib/libapue.a /usr/local/bin
 gcc myls.c -o myls -lapue
 ./myls .
 ./myls /usr
 # 报错解决
-csrutil disable
-重启后再进行cp操作
+重启，按住`command + R`不放，直到苹果进度条打开，进入recovery后，导航栏选`终端`，输入`csrutil disable`
 ```
 
 ```bash
@@ -59,7 +58,7 @@ csrutil disable
 cp apue.3e/include/apue.h .
 cp apue.3e/lib/libapue.a .
 # 其实make就可以看出编译方式，`-L`将目录添加到库搜索路径 `-lapue`搜索libapue.a
-gcc myls.c -o myls -L ../ -lapue
+gcc myls_bad.c -o myls_bad -L ../ -lapue
 ./myls .
 ./myls /usr
 ```
