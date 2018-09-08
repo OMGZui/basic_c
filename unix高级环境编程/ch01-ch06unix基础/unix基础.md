@@ -1,6 +1,6 @@
 # unix 基础
 
-## 1、unix基础知识
+## 一、unix基础知识
 
 ### 1、系统体系结构
 
@@ -25,6 +25,12 @@ root:*:0:0:System Administrator:/var/root:/bin/sh
   - 起始目录 `/var/root`
   - shell程序 `/bin/sh`
 
-### 3、文件和目录
+## 二、文件I/O
 
-- 根 `/`
+open、read、write、lseek、close
+
+## 三、文件和目录
+
+## 四、标准I/O
+
+## 五、系统数据文件和信息
