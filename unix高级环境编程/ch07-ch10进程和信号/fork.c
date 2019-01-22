@@ -30,5 +30,8 @@ int main(void)
     }
 
     printf("pid = %ld, glob = %d, var = %d\n", (long)getpid(), globvar, var);
+    // 结论是子进程对变量的修改不会影响父进程中变量的值
+    // pid = 95836, glob = 7, var = 89 子进程进行++运算
+    // pid = 95835, glob = 6, var = 88 父进程等待2s
     exit(0);
 }

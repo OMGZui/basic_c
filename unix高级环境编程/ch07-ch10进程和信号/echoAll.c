@@ -1,5 +1,6 @@
 #include "apue.h"
 
+// gcc echoAll.c -o echoAll -lapue
 int main(int argc, char *argv[])
 {
     int i;
